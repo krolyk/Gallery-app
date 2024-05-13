@@ -16,7 +16,7 @@ const UploadPage = () => {
       quality: 1,
     });
 
-    if (!result.cancelled) {
+    if (!result.canceled) {
       setPhoto(result.uri);
     }
   };
@@ -28,8 +28,8 @@ const UploadPage = () => {
     }
 
     try {
-      // Simulated upload to a server (replace with actual upload logic)
-      const response = await axios.post('https://your-server-url/upload', {
+      //Server url
+      const response = await axios.post('server-url', {
         photo,
         title,
         description,

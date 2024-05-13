@@ -4,9 +4,8 @@ import { View, Text, FlatList, TouchableOpacity, Image, StyleSheet } from 'react
 const GalleryPage = ({ navigation }) => {
   const [photos, setPhotos] = useState([]);
 
-  // Simulated data for demonstration
   useEffect(() => {
-    // Fetch photos from your backend or storage service
+    // Fetching photos from backend
     const fetchedPhotos = [
       { id: 1, title: 'Photo 1', description: 'Description 1', uri: 'https://via.placeholder.com/150' },
       { id: 2, title: 'Photo 2', description: 'Description 2', uri: 'https://via.placeholder.com/150' },
